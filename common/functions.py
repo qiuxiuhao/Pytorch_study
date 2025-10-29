@@ -1,3 +1,21 @@
+import numpy as np
+
+#损失函数
+
+#MSE、L2
+def mean_squared_error(y_true, y_pred):
+    return 0.5 * np.sum((y_true - y_pred) ** 2)
+
+#交叉熵误差
+def cross_entropy(y_true, y_pred):
+    if y_true.ndim == 1:
+        y_true = y_true.reshape(-1, 1)
+        y_pred = y_pred.reshape(-1, 1)
+    if y_pred.size == y_true.size:
+        y_pred = np.argmax(y_pred, axis=1)
+    n = y_true.shape[0]
+    return -np.sum(np.log(y_true[np.arange(n), y_pred] + 1e-10)) / n
+
 #阶跃函数
 def step_function0(x):
     return 1 if x > 0 else 0

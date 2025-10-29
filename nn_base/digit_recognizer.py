@@ -24,13 +24,31 @@ def get_data():
 
     return x_test, y_test
 
-#初始化神经网络
+x,y = get_data()
+
+#1.初始化神经网络
 def init_network():
 
     network = joblib.load('')
     return network
 
+#2加载参数
+network = init_network()
 
-x,y = get_data()
-print(x.shape)
-print(y.shape)
+#3.前向传播
+batch_size = 100
+accuracy_cnt = 0
+n = x.shape[0]
+
+for i in range(0,n,batch_size):
+    #3.1取数据
+    x_batch = x[i:i+batch_size]
+
+    #3.2前向传播
+    y_batch = forward(network,x_batch)
+
+    y_pred = np.argmax(y_batch,axis=1)
+
+    #3.4累加准确个数
+    accuracy_cnt += np.sum((y_pred==y[i:i+batch_size]))
+
