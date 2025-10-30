@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf84580-1442-452d-9b24-a1d80bb2017f" name="更改" comment="初始化">
-      <change afterPath="$PROJECT_DIR$/common/gradient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nn_train/gradient_descent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nn_train/simple_net.py" afterDir="false" />
+    <list default="true" id="fdf84580-1442-452d-9b24-a1d80bb2017f" name="更改" comment="梯度下降理论学习">
+      <change afterPath="$PROJECT_DIR$/common/load_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nn_train/digit_recognizer_nn_train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nn_train/two_layer_net.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nn_base/digit_recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/nn_base/digit_recognizer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,21 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "qiuxiuhao"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;qiuxiuhao&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/qiuxiuhao/Pytorch_study.git",
-    "accountId": "763a8f73-a5cd-4d3e-8824-ed9c3b22dc57"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/qiuxiuhao/Pytorch_study.git&quot;,
+    &quot;accountId&quot;: &quot;763a8f73-a5cd-4d3e-8824-ed9c3b22dc57&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="34iiXPXEUZzJjEWvUWQRsOPSHEQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,6 +49,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.digit_recognizer.executor": "Run",
+    "Python.digit_recognizer_nn_train.executor": "Run",
     "Python.functions.executor": "Run",
     "Python.gradient_descent.executor": "Run",
     "Python.simple_net.executor": "Run",
@@ -72,7 +71,7 @@
       <recent name="D:\study\one_year\Pytorch_study\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gradient_descent">
+  <component name="RunManager" selected="Python.digit_recognizer_nn_train">
     <configuration name="digit_recognizer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Pytorch_study" />
       <option name="ENV_FILES" value="" />
@@ -88,6 +87,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nn_base/digit_recognizer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="digit_recognizer_nn_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pytorch_study" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nn_train" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nn_train/digit_recognizer_nn_train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,6 +189,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.digit_recognizer_nn_train" />
         <item itemvalue="Python.gradient_descent" />
         <item itemvalue="Python.simple_net" />
         <item itemvalue="Python.digit_recognizer" />
@@ -189,7 +212,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761702831330</updated>
-      <workItem from="1761702832413" duration="13258000" />
+      <workItem from="1761702832413" duration="14020000" />
+      <workItem from="1761789365292" duration="4642000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />
@@ -199,18 +223,53 @@
       <option name="project" value="LOCAL" />
       <updated>1761706069032</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="梯度下降理论学习">
+      <option name="closed" value="true" />
+      <created>1761728904327</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761728904327</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -218,12 +277,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
+    <MESSAGE value="梯度下降理论学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="梯度下降理论学习" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Pytorch_study$functions.coverage" NAME="functions 覆盖结果" MODIFIED="1761704651487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/Pytorch_study$simple_net.coverage" NAME="simple_net 覆盖结果" MODIFIED="1761725706180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nn_train" />
     <SUITE FILE_PATH="coverage/Pytorch_study$gradient_descent.coverage" NAME="gradient_descent 覆盖结果" MODIFIED="1761727735521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nn_train" />
     <SUITE FILE_PATH="coverage/Pytorch_study$digit_recognizer.coverage" NAME="digit_recognizer 覆盖结果" MODIFIED="1761705488620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nn_base" />
+    <SUITE FILE_PATH="coverage/Pytorch_study$digit_recognizer_nn_train.coverage" NAME="digit_recognizer_nn_train 覆盖结果" MODIFIED="1761793157693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nn_train" />
   </component>
 </project>
